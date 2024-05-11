@@ -1,6 +1,8 @@
-<template>
+<script setup>
+import ValidaCpf from '../components/ValidaCpf.vue'
+</script>
 
-        <h1>This is a components page</h1>
-        
-   
+<template>
+    <h1>Alguns componentes aqui</h1>
+    <ValidaCpf />
 </template>
