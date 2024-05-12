@@ -13,7 +13,8 @@ defineProps({
     <h3>
       Essa pagina esta contruida com
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> +
+      <a href="https://vuetifyjs.com/" target="_blank" rel="noopener">Vuetify</a>.
     </h3>
   </div>
 </template>
