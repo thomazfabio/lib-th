@@ -5,12 +5,27 @@ import ValidaCep from '../components/ValidaCep.vue'
 </script>
 
 <template>
-    <h1>Alguns componentes aqui</h1>
-    <hr>
-    <ValidaCpf />
-    <hr>
-    <ValidaCnpj />
-    <hr>
-    <ValidaCep />
-
+    <div class="main">
+        <h1>Componentes de validação em formularios</h1>
+        <h2>Componentes simples apenas html css</h2>
+        <hr>
+        <ValidaCpf />
+        <hr>
+        <ValidaCnpj />
+        <hr>
+        <ValidaCep />
+    </div>
 </template>
+
+<style scoped>
+.main {
+    padding: 20px;
+    width: 100vw;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+</style>

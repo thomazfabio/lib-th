@@ -2,7 +2,7 @@
     <div>
       <form @submit.prevent="checkCpf">
         <div class="form-group">
-          <label for="cpf">CPF:</label>
+          <label for="cpf">CPF</label><br>
           <input
             id="cpf"
             v-model="formattedCpf"
@@ -10,6 +10,7 @@
             placeholder="000.000.000-00"
             maxlength="14"
           >
+          <br>
           <span v-if="error" class="error">{{ error }}</span>
         </div>
         <button type="submit">Verificar CPF</button>

@@ -2,7 +2,7 @@
     <div>
       <form @submit.prevent="submitForm">
         <div class="form-group">
-          <label for="cep">CEP:</label>
+          <label for="cep">CEP</label><br>
           <input
             id="cep"
             v-model="cep"

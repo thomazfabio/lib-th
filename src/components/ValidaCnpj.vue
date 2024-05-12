@@ -2,13 +2,14 @@
     <div>
       <form @submit.prevent="checkCnpj">
         <div class="form-group">
-          <label for="cnpj">CNPJ:</label>
+          <label for="cnpj">CNPJ</label><br>
           <input
             id="cnpj"
             v-model="cnpj"
             placeholder="00.000.000/0000-00"
             maxlength="18"
           >
+          <br>
           <span v-if="error" class="error">{{ error }}</span>
         </div>
         <button type="submit">Verificar CNPJ</button>
