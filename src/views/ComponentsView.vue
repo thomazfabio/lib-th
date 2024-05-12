@@ -1,35 +1,25 @@
-<script setup>
-import ValidaCpf from '../components/ValidaCpf.vue'
-import ValidaCnpj from '../components/ValidaCnpj.vue'
-import ValidaCep from '../components/ValidaCep.vue'
-import { ref } from 'vue'
-const tab = ref('one')  
-</script>
-
 <template>
     <v-container>
         <v-card>
             <v-tabs v-model="tab" bg-color="primary">
-                <v-tab value="one" color="yellow">Componentes simples</v-tab>
-                <v-tab value="two" color="yellow">Item Two</v-tab>
+                <v-tab value="one" color="yellow">Componentes Vuetify</v-tab>
+                <v-tab value="two" color="yellow">Componentes simples</v-tab>
                 <v-tab value="three" color="yellow">Item Three</v-tab>
+
             </v-tabs>
 
             <v-card-text>
                 <v-tabs-window v-model="tab">
                     <v-tabs-window-item value="one">
-                        <h1>Componentes de validação em formularios</h1>
-                        <h2>Componentes simples apenas html css</h2>
-                        <hr>
-                        <ValidaCpf />
-                        <hr>
-                        <ValidaCnpj />
-                        <hr>
-                        <ValidaCep />
+                        <h1 class="mb-8">Componente Vuetify</h1>
+                        <v-row>
+                            <v-col cols="12" xs="12" sm="8" md="4" lg="4" xl="4">
+                                <ValidaCepVuetify />
+                            </v-col>
+                        </v-row>
                     </v-tabs-window-item>
 
                     <v-tabs-window-item value="two">
-                        Two
                     </v-tabs-window-item>
 
                     <v-tabs-window-item value="three">
@@ -40,6 +30,22 @@ const tab = ref('one')
         </v-card>
     </v-container>
 </template>
+
+
+<script>
+import ValidaCepVuetify from '../components/vuetify/ValidaCepVuetify.vue'
+export default {
+    components: {
+        ValidaCepVuetify
+    },
+    data() {
+        return {
+            tab: 'one'
+        }
+    }
+}
+
+</script>
 
 <style scoped>
 .main {
